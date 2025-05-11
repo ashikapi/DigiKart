@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+/* Base */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+html, body.login-page {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border: 4px solid #e8bb97;
+    background-image: url('images/loginbacground.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.login-page .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Container */
+.login-page .container {
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Header */
+.login-page .login {
+    background: #e8bb97;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login-page .login h2 {
+    color: white;
+    font-size: 24px;
+}
+
+/* Login Box */
+.login-page .login-box {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 120px;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login-page .login-box h3 {
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #fffefe;
+}
+
+.login-page .login-box input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Buttons */
+.login-page .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login-page .register-btn,
+.login-page .forgot-btn {
+    padding: 10px;
+    width: 48%;
+    border: none;
+    border-radius: 20px;
+    background: #7ed957;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-page .login-btn {
+    display: block;
+    width: 40%;
+    margin-top: 15px;
+    margin-left: 110px;
+    padding: 10px 20px;
+    background: #fffefe;
+    color: black;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#sidebarMenu {
+    position: fixed;
+    top: 0px; /* ← এইটা background সহ পুরো box কে নিচে নামাবে */
+    left: 0;
+}
+.firstheader {
+    background: #e8bb97;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: -15px;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+.gape {
+    background: black;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+.firstheader h2 {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}

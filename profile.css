@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+/* Base Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+html, body.profile-page {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body.profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border: 6px solid #e8bb97;
+    background-image: url('images/ProfileBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+/* Container */
+.profile-page .container {
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.profile-page .headers {
+    width: 90%;
+    max-width: 600px;
+    background: #e8bb97;
+    padding: 15px;
+    border-radius: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin-left: -200px;
+    text-align: center;
+}
+
+.profile-page .headers h2 {
+    color: black;
+    font: bold;
+    font-size: 24px;
+}
+
+/* Profile Box */
+.profile-page .profile-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Profile Image */
+.profile-page .profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: gray;
+}
+
+/* Details */
+.profile-page .profile-details {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.profile-page .detail-row {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-page .label {
+    color: #333;
+}
+
+.profile-page .value {
+    color: #555;
+    text-align: right;
+}
+#sidebarMenu {
+    position: fixed;
+    top: 0px; /* ← এইটা background সহ পুরো box কে নিচে নামাবে */
+    left: 0;
+}
+.firstheader {
+    background: #e8bb97;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: -15px;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+.gape {
+    background: black;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+.firstheader h2 {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}

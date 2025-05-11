@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* Base Reset */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border: 6px solid #e8bb97;
+    background-image: url('images/change_password_background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+
+/* Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    max-width: 480px;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background-color: #e8bb97;
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: -20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+    color: black;
+    font-size: 24px;
+}
+
+/* OTP Input */
+.register-box input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Main Button */
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+    background: #4b00c8;
+}
+
+/* Resend Button */
+#resendForm .register-btn {
+    background: orange;
+    margin-top: 10px;
+}
+
+#resendForm .register-btn:hover {
+    background: darkorange;
+}
+
+/* Message Display */
+p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Countdown */
+#countdown {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .register-box input[type="text"] {
+        font-size: 16px;
+    }
+
+    .register-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #countdown {
+        font-size: 15px;
+    }
+}
